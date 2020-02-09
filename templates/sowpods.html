@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         body {
+            background-image: url("../static/images/91513.jpg");
+         }
+      </style>
+   </head>
+
+   <body>
+      <h1>Here's a list of all words in the sowpods dictionary:</h1>
+      <h2>There are 267751 words, so use control + find</h2>
+            <div>
+                {% for word in allsowpods%}
+                    {{ word }}
+                {% endfor %}
+            </div>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <p>background image:</p>
+    <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
+  </footer>
+   </body>
+</html>
